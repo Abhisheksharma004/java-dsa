@@ -13,12 +13,25 @@ public class ifCondition {
 //        }
 
 //        print odd or even number using java
-        System.out.print("Enter Number : ");
-        int x = sc.nextInt();
-        if( x % 2 == 0 ){
-            System.out.println("Even");
+//
+
+
+//        write a program in given condition
+//                a = b -> equal
+//                a > b -> a is grater
+//                a < b -> a is lesser
+        System.out.println("Enter Value A : ");
+        int a = sc.nextInt();
+        System.out.println("Enter Value B : ");
+        int b = sc.nextInt();
+        if ( a == b ){
+            System.out.println("Equal");
         }else {
-            System.out.println("Odd");
+            if ( a > b ){
+                System.out.println("A id Grater");
+            }else {
+                System.out.println("A is Lesser");
+            }
         }
     }
 
