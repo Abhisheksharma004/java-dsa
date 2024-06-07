@@ -9,7 +9,7 @@ public class switchStatement {
                 System.out.println("Hello");
                 break;
             case 2 :
-                System.out.println("Namste");
+                System.out.println("Namaste");
                 break;
             case 3 :
                 System.out.println("Banjour");
