@@ -1,16 +1,23 @@
 public class daimondPattern {
     public static void main(String[] args) {
-        int n = 7; // Number of rows for the pattern
+        int n = 7; // Height of the diamond pattern
 
-        for (int i = 0; i < n; i++) {
+        // Top half of the diamond (including the middle row)
+        for (int i = 0; i < n / 2 + 1; i++) {
             for (int j = 0; j < n; j++) {
-                if ((i == 0 && (j == 3 || j == 4 || j == 5)) ||
-                        (i == 1 && (j == 2 || j == 3 || j == 4 || j == 5 || j == 6)) ||
-                        (i == 2 && j != 0) ||
-                        (i == 3) ||
-                        (i == 4) ||
-                        (i == 5 && (j == 1 || j == 2 || j == 3 || j == 4 || j == 5)) ||
-                        (i == 6 && (j == 2 || j == 3 || j == 4))) {
+                if (j >= (n / 2 - i) && j <= (n / 2 + i)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+        // Bottom half of the diamond
+        for (int i = n / 2 - 1; i >= 0; i--) {
+            for (int j = 0; j < n; j++) {
+                if (j >= (n / 2 - i) && j <= (n / 2 + i)) {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
