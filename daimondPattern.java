@@ -16,7 +16,7 @@ public class daimondPattern {
                 if (j >= (n / 2 - i) && j <= (n / 2 + i)) {
                     System.out.print("*");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("");
                 }
             }
             System.out.println();
