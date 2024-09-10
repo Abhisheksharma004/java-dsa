@@ -1,6 +1,4 @@
-package LabIndex;
-
-public class JumpStatementsDemo {
+class JumpStatementsDemo {
     public static void main(String[] args) {
         // Example of 'break'
         System.out.println("Example of break:");
